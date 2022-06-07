@@ -3,8 +3,14 @@
     <div class="header">
       <MainHeader></MainHeader>
     </div>
-    <div class="main">
-        <router-view></router-view>
+    <div class="main_container">
+      <div class="left_steps">
+        <ProcessSteps></ProcessSteps>
+      </div>
+      <div class="process_area">
+          <OperatingSpace></OperatingSpace>
+      </div>
+
     </div>
   </div>
 </template>
@@ -12,9 +18,11 @@
 <script>
 
 import MainHeader from "@/layout/Header";
+import ProcessSteps from "@/layout/Steps/ProcessSteps";
+import OperatingSpace from "@/layout/OperatingSpace/OperatingSpace";
 export default {
   name: 'Layout',
-  components: {MainHeader},
+  components: {OperatingSpace, ProcessSteps, MainHeader},
   data() {
     return {}
   },
@@ -31,15 +39,19 @@ export default {
 }
 /* 头部样式 */
 .header {
-
+}
+/* 主区域 */
+.main_container {
+  flex: 1;
+  display: flex;
 }
 
+.left_steps{
+  width: 35vh;
+}
 
-/* 主区域 */
-.main {
+.process_area{
   flex: 1;
-
-
 }
 </style>
 

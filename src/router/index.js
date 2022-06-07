@@ -10,7 +10,14 @@ export default new Router({
     {
       name: 'index',
       path: '/',
-      component: () => import('@/layout/index')
+      component: () => import('@/layout/index'),
+      children:[
+        {
+          path: '/test',
+          name: 'test',
+          component: () => import('@/layout/index')
+        }
+      ]
     },
   ]
 })
