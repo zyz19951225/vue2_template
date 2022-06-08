@@ -4,13 +4,7 @@
       <MainHeader></MainHeader>
     </div>
     <div class="main_container">
-      <div class="left_steps">
-        <ProcessSteps></ProcessSteps>
-      </div>
-      <div class="process_area">
-          <OperatingSpace></OperatingSpace>
-      </div>
-
+      <router-view></router-view>
     </div>
   </div>
 </template>
@@ -43,7 +37,6 @@ export default {
 /* 主区域 */
 .main_container {
   flex: 1;
-  display: flex;
 }
 
 .left_steps{

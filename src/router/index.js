@@ -13,6 +13,11 @@ export default new Router({
       component: () => import('@/layout/index'),
       children:[
         {
+          path: '/ModalDeployment',
+          name: 'ModalDeployment',
+          component: () => import('@/views/ModalDeployment')
+        },
+        {
           path: '/chooseP4Compiler',
           name: 'chooseP4Compiler',
           component: () => import('@/components/ChooseP4Compiler.vue')
@@ -23,6 +28,7 @@ export default new Router({
           component: () => import('@/components/test2.vue')
         }
       ],
+      redirect:'ModalDeployment'
     },
     {
       // 会匹配所有路径
