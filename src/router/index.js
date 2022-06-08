@@ -5,7 +5,7 @@ Vue.use(Router)
 
 
 export default new Router({
-  mode:'history',
+
   routes: [
     {
       name: 'index',
@@ -13,11 +13,21 @@ export default new Router({
       component: () => import('@/layout/index'),
       children:[
         {
-          path: '/test',
-          name: 'test',
-          component: () => import('@/layout/index')
+          path: '/chooseP4Compiler',
+          name: 'chooseP4Compiler',
+          component: () => import('@/components/chooseP4Compiler.vue')
+        },
+        {
+          path: '/test2',
+          name: 'createTopo',
+          component: () => import('@/components/test2.vue')
         }
-      ]
+      ],
     },
+    {
+      // 会匹配所有路径
+      path: '*',
+      component: () => import('@/components/test'),
+    }
   ]
 })

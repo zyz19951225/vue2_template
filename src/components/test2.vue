@@ -1,5 +1,5 @@
 <template>
-  <div>1231231</div>
+  <div>1231231231231asdfcasdasdasdasdassdasasdasdasdasdasdasd</div>
 </template>
 
 <script>
@@ -9,9 +9,5 @@ export default {
 </script>
 
 <style scoped>
-div{
-  color: white;
-
-}
 
 </style>

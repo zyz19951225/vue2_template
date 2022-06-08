@@ -32,8 +32,7 @@ export default {
   name:'MainHeader',
   data() {
     return {
-      activeIndex: '1',
-      activeIndex2: '1'
+      activeIndex: '2',
     };
   },
   methods: {
