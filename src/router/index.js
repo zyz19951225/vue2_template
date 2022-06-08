@@ -15,7 +15,7 @@ export default new Router({
         {
           path: '/chooseP4Compiler',
           name: 'chooseP4Compiler',
-          component: () => import('@/components/chooseP4Compiler.vue')
+          component: () => import('@/components/ChooseP4Compiler.vue')
         },
         {
           path: '/test2',

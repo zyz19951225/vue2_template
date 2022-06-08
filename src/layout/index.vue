@@ -18,8 +18,8 @@
 <script>
 
 import MainHeader from "@/layout/Header";
-import ProcessSteps from "@/layout/Steps/ProcessSteps";
-import OperatingSpace from "@/layout/OperatingSpace/OperatingSpace";
+import ProcessSteps from "@/components/ProcessSteps";
+import OperatingSpace from "@/components/OperatingSpace";
 export default {
   name: 'Layout',
   components: {OperatingSpace, ProcessSteps, MainHeader},
