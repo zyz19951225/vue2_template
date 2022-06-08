@@ -12,9 +12,9 @@
                active-text-color="rgba(44, 197, 255, 1)"
                mode="horizontal"
                @select="handleSelect">
-        <el-menu-item index="1"><span class="menu_title">首页</span></el-menu-item>
-        <el-menu-item index="2"><span class="menu_title">模态部署</span></el-menu-item>
-        <el-menu-item index="3"><span class="menu_title">部署机制</span></el-menu-item>
+        <el-menu-item index="HomePage"><span class="menu_title">首页</span></el-menu-item>
+        <el-menu-item index="ModalDeployment"><span class="menu_title">模态部署</span></el-menu-item>
+        <el-menu-item index="ModalDeployment1"><span class="menu_title">部署机制</span></el-menu-item>
       </el-menu>
     </div>
 
@@ -37,7 +37,7 @@ export default {
   },
   methods: {
     handleSelect(key, keyPath) {
-      console.log(key, keyPath);
+      this.$router.push({name:key})
     }
   }
 }

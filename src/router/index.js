@@ -15,18 +15,25 @@ export default new Router({
         {
           path: '/ModalDeployment',
           name: 'ModalDeployment',
-          component: () => import('@/views/ModalDeployment')
+          component: () => import('@/views/ModalDeployment'),
+          children:[
+            {
+              path: '/chooseP4Compiler',
+              name: 'chooseP4Compiler',
+              component: () => import('@/components/ChooseP4Compiler')
+            },
+            {
+              path: '/test2',
+              name: 'createTopo',
+              component: () => import('@/components/test2')
+            }
+          ]
         },
         {
-          path: '/chooseP4Compiler',
-          name: 'chooseP4Compiler',
-          component: () => import('@/components/ChooseP4Compiler.vue')
+          path: '/HomePage',
+          name: 'HomePage',
+          component: () => import('@/views/HomePage')
         },
-        {
-          path: '/test2',
-          name: 'createTopo',
-          component: () => import('@/components/test2.vue')
-        }
       ],
       redirect:'ModalDeployment'
     },
