@@ -71,7 +71,7 @@ export default new Router({
     {
       // 会匹配所有路径
       path: '*',
-      component: () => import('@/components/test'),
+      component: () => import('@/layout/index'),
     }
   ]
 })
