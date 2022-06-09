@@ -2,8 +2,8 @@
 <div class="compiler_container">
   <div class="choose_compiler">
     <span class="compiler_container_title">选择P4编译器</span>
-    <el-radio v-model="radio" label="1">备选项</el-radio>
-    <el-radio v-model="radio" label="2">备选项</el-radio>
+    <el-radio v-model="radio" label="1">PPK</el-radio>
+    <el-radio v-model="radio" label="2">BMV2</el-radio>
   </div>
   <div class="choose_compiler_bottom">
     <el-button type="primary" style="width: 200px">提交，创建拓扑</el-button>

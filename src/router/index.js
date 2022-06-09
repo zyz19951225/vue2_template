@@ -23,16 +23,47 @@ export default new Router({
               component: () => import('@/components/ChooseP4Compiler')
             },
             {
-              path: '/test2',
+              path: '/createTopo',
               name: 'createTopo',
-              component: () => import('@/components/test2')
+              component: () => import('@/components/CreateTopo')
+            },
+            {
+              path: '/compiledP4',
+              name: 'compiledP4',
+              component: () => import('@/components/CompiledP4')
+            },
+            {
+              path: '/startP4',
+              name: 'startP4',
+              component: () => import('@/components/StartP4')
+            },
+            {
+              path: '/compiledONOS',
+              name: 'compiledONOS',
+              component: () => import('@/components/CompiledONOS')
+            },
+            {
+              path: '/ONOSLoadApp',
+              name: 'ONOSLoadApp',
+              component: () => import('@/components/ONOSLoadApp')
+            },
+            {
+              path: '/StartTheApplication',
+              name: 'StartTheApplication',
+              component: () => import('@/components/StartTheApplication')
             }
-          ]
+          ],
+          redirect:'/chooseP4Compiler'
         },
         {
           path: '/HomePage',
           name: 'HomePage',
           component: () => import('@/views/HomePage')
+        },
+        {
+          path: '/DeploymentMechanism',
+          name: 'DeploymentMechanism',
+          component: () => import('@/views/DeploymentMechanism')
         },
       ],
       redirect:'ModalDeployment'

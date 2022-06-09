@@ -14,12 +14,12 @@
                @select="handleSelect">
         <el-menu-item index="HomePage"><span class="menu_title">首页</span></el-menu-item>
         <el-menu-item index="ModalDeployment"><span class="menu_title">模态部署</span></el-menu-item>
-        <el-menu-item index="ModalDeployment1"><span class="menu_title">部署机制</span></el-menu-item>
+        <el-menu-item index="DeploymentMechanism"><span class="menu_title">部署机制</span></el-menu-item>
       </el-menu>
     </div>
 
     <div class="help_bottom">
-      部署手册
+      <el-button type="text">部署手册</el-button>
       <i class="el-icon-question"></i>
     </div>
   </div>
@@ -56,6 +56,7 @@ export default {
 .header_title_container{
   display: flex;
   align-items: center;
+  margin-left: 2vw;
 }
 
 .logo {
@@ -71,7 +72,6 @@ export default {
 }
 
 .header_menu{
-
   margin-left: auto
 }
 

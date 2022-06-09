@@ -22,12 +22,16 @@ export default {
   components: {MainHeader},
   data() {
     return {
-      activeName: 'chooseP4Compiler'
+      activeName: '',
     };
+  },
+  mounted() {
+    console.log(console.log(this.$route.path))
   },
   methods: {
     handleClick(tab, event) {
       this.$router.push({ name: tab.name })
+      this.activeName = tab.name
     }
   }
 };

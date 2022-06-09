@@ -17,7 +17,7 @@
         <div class="menu_item_title">部署手册</div>
       </div>
     </div>
-
+    <div class="foot_item">浙ICP备18016057号   Coypright  2020 之江实验室. All Rights Reserved</div>
   </div>
 </template>
 
@@ -37,15 +37,28 @@ export default {
 .home_page_title{
   color: #FFFFFF;
   font-size: 4vh;
-  margin-top: 5vh;
-  margin-left: 3vw;
+  margin-top: 8vh;
+  margin-left: 5vw;
+  position: relative;
+}
+
+.home_page_title::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  border-radius: 8px;
+  background-color: rgba(44, 197, 255, 1);
 }
 
 .menu_list{
   flex: 1;
   display: grid;
   grid-template-columns: repeat(3, 33.33%);
-  background: url("../assets/homepagebg.png") no-repeat  center fixed;
+  background: url("../assets/homepagebg.png") no-repeat right/40% fixed ;
 }
 
 .menu_item{
@@ -79,7 +92,12 @@ export default {
   color: #FFFFFF;
   font-size: x-large;
   font-weight: bold;
+}
 
+.foot_item{
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px 0;
 }
 
 </style>
