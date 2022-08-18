@@ -1,4 +1,4 @@
-
+const path = require('path')
 module.exports = {
     lintOnSave: false,
     devServer: {
@@ -18,7 +18,23 @@ module.exports = {
         port: 8081, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
 
     },
-
+    chainWebpack: config => {
+        config.module
+            .rule('svg')
+            .uses.clear()
+        config.module
+            .rule('svg1')
+            .test(/\.svg$/)
+            .use('svg-sprite')
+            .loader('svg-sprite-loader')
+            .options({
+                symbolId: 'icon-[name]'
+            })
+            .end()
+            .include
+            .add(path.join(__dirname,'src/icons'))//这个地址为项目中svg文件的入口文件
+            .end()
+    }
 }
 
 

@@ -1,6 +1,10 @@
 <template>
 	<div>
-		<h1>当前求和为：{{sum}}</h1>
+    <svg-icon
+        icon-class="task"
+        size="35"
+    />
+    <h1>当前求和为：{{sum}}</h1>
 		<h3>当前求和放大10倍为：{{bigSum}}</h3>
 		<h3>我在{{school}}，学习{{subject}}</h3>
 		<select v-model.number="n">
