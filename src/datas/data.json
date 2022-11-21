@@ -8,7 +8,7 @@
       {
         "id": "控制面服务器",
         "sort": "control-plane-server",
-        "label": "控制面服务器"
+        "label": "ONOS服务器"
       },
       {
         "id": "核心级可编程网元I型",

@@ -1,5 +1,9 @@
 <template>
-  <div id="topological" class="topological"></div>
+  <div class="topo-container">
+    <div class="title">编译系统测试拓扑网络</div>
+    <div id="topological" class="topological"></div>
+  </div>
+
 </template>
 
 <script>
@@ -57,9 +61,22 @@ export default {
 </script>
 
 <style scoped>
-.topological {
-  width: 100%;
+
+
+.topo-container{
+  display: flex;
+  flex-direction: column;
   height: 100vh;
- margin: auto;
+  width: 100%;
+}
+
+.topological{
+  flex: 1;
+}
+
+.title{
+  font-size: 36px;
+  font-weight: bold;
+  padding-top: 20px;
 }
 </style>
