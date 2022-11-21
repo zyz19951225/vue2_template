@@ -22,7 +22,7 @@ export function initDefaultGraph(width, height, boxId) {
             type: 'circle',
             icon: {
                 show: true,
-                img: require('@/assets/img.png'),
+                img: require('@/assets/fpga.png'),
                 // text: '...', 使用 iconfont
                 width: 120,
                 height: 120,
