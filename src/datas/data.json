@@ -1,0 +1,240 @@
+{
+  "data": {
+    "nodes": [{
+      "id": "网络编译服务器",
+      "sort": "Web-Compilation-Server",
+      "label": "网络编译服务器"
+    },
+      {
+        "id": "控制面服务器",
+        "sort": "control-plane-server",
+        "label": "控制面服务器"
+      },
+      {
+        "id": "核心级可编程网元I型",
+        "sort": "Core-level-programmable-network-element-type-I",
+        "label": "核心级可编程网元I型"
+      },
+      {
+        "id": "核心级可编程网元II型",
+        "sort": "Core-level-programmable-network-element-type-II",
+        "label": "核心级可编程网元II型"
+      },
+      {
+        "id": "接入级可编程网元I型",
+        "sort": "Access-level-programmable-network-element-type-I",
+        "label": "接入级可编程网元I型"
+      },
+      {
+        "id": "接入级可编程网元II型-1",
+        "sort": "Access-level-programmable-network-element-type-II",
+        "label": "接入级可编程网元II型-1"
+      },
+      {
+        "id": "接入级可编程网元II型-2",
+        "sort": "Access-level-programmable-network-element-type-II",
+        "label": "接入级可编程网元II型-2"
+      },
+      {
+        "id": "接入级可编程网元II型-3",
+        "sort": "Access-level-programmable-network-element-type-II",
+        "label": "接入级可编程网元II型-3"
+      },
+      {
+        "id": "FPGA服务器",
+        "sort": "FPGA-server",
+        "label": "FPGA服务器"
+
+      },
+      {
+        "id": "PC1",
+        "sort": "PC",
+        "label": "PC1"
+
+      },
+      {
+        "id": "PC2",
+        "sort": "PC",
+        "label": "PC2"
+
+      },
+      {
+        "id": "PC3",
+        "sort": "PC",
+        "label": "PC3"
+
+      },
+      {
+        "id": "PC4",
+        "sort": "PC",
+        "label": "PC4"
+
+      },
+      {
+        "id": "PC5",
+        "sort": "PC",
+        "label": "PC5"
+
+      },
+      {
+        "id": "PC6",
+        "sort": "PC",
+        "label": "PC6"
+      },
+      {
+        "id": "PC7",
+        "sort": "PC",
+        "label": "PC7"
+      },
+      {
+        "id": "PC8",
+        "sort": "PC",
+        "label": "PC8"
+
+      },
+      {
+        "id": "PC9",
+        "sort": "PC",
+        "label": "PC9"
+
+      },
+      {
+        "id": "PC10",
+        "sort": "PC",
+        "label": "PC10"
+
+      }
+    ],
+
+
+    "edges": [{
+      "id": "e1",
+      "sort": "1",
+      "source": "网络编译服务器",
+      "target": "核心级可编程网元I型"
+
+    }, {
+      "id": "e2",
+      "sort": "1",
+      "source": "控制面服务器",
+      "target": "核心级可编程网元I型"
+
+
+    }, {
+      "id": "e3",
+      "sort": "1",
+      "source": "控制面服务器",
+      "target": "核心级可编程网元II型"
+    },  {
+      "id": "e4",
+      "sort": "1",
+      "source": "核心级可编程网元I型",
+      "target": "接入级可编程网元II型-3"
+    },{
+      "id": "e5",
+      "sort": "1",
+      "source": "核心级可编程网元I型",
+      "target": "接入级可编程网元II型-2"
+
+    },{
+      "id": "e6",
+      "sort": "1",
+      "source": "核心级可编程网元I型",
+      "target": "接入级可编程网元II型-1"
+
+    },{
+      "id": "e7",
+      "sort": "1",
+      "source": "核心级可编程网元I型",
+      "target": "接入级可编程网元I型"
+
+    },{
+      "id": "e8",
+      "sort": "1",
+      "source": "核心级可编程网元II型",
+      "target": "FPGA服务器"
+
+    },{
+      "id": "e9",
+      "sort": "1",
+      "source": "核心级可编程网元II型",
+      "target": "接入级可编程网元II型-3"
+
+    },{
+      "id": "e10",
+      "sort": "1",
+      "source": "核心级可编程网元II型",
+      "target": "接入级可编程网元II型-2"
+
+    },{
+      "id": "e11",
+      "sort": "1",
+      "source": "核心级可编程网元II型",
+      "target": "接入级可编程网元II型-1"
+
+    },{
+      "id": "e12",
+      "sort": "1",
+      "source": "核心级可编程网元II型",
+      "target": "接入级可编程网元I型"
+    },{
+      "id": "e13",
+      "sort": "1",
+      "source": "接入级可编程网元I型",
+      "target": "PC2"
+
+    },{
+      "id": "e14",
+      "sort": "1",
+      "source": "接入级可编程网元I型",
+      "target": "PC1"
+
+    },{
+      "id": "e15",
+      "sort": "1",
+      "source": "接入级可编程网元II型-1",
+      "target": "PC4"
+
+    },{
+      "id": "e16",
+      "sort": "1",
+      "source": "接入级可编程网元II型-1",
+      "target": "PC3"
+    },{
+      "id": "e17",
+      "sort": "1",
+      "source": "接入级可编程网元II型-2",
+      "target": "PC7"
+
+    },{
+      "id": "e18",
+      "sort": "1",
+      "source": "接入级可编程网元II型-2",
+      "target": "PC6"
+
+    },{
+      "id": "e19",
+      "sort": "1",
+      "source": "接入级可编程网元II型-2",
+      "target": "PC5"
+
+    },{
+      "id": "e20",
+      "sort": "1",
+      "source": "接入级可编程网元II型-3",
+      "target": "PC10"
+    },{
+      "id": "e21",
+      "sort": "1",
+      "source": "接入级可编程网元II型-3",
+      "target": "PC9"
+
+    },{
+      "id": "e22",
+      "sort": "1",
+      "source": "接入级可编程网元II型-3",
+      "target": "PC8"
+
+    }]
+  }
+}
